@@ -192,6 +192,11 @@ a.lien:hover{
 @media only screen and (max-width: 800px)
 
 {
+    .container-global 
+    {
+        width: 90%;
+    }	
+	
     h1 
     {
         font-size: 20px;
