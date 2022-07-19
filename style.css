@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+    font-size: 40px;
+    text-shadow: rgba(255, 142, 37, 0.5) 0px 0px 5px,
+    rgb(255, 142, 37, 0.5) 0px 0px 10px,
+    rgb(255, 142, 37, 0.5) 0px 0px 10px;
+}
+.container-global {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+   
+}
+.question-block {
+    background: linear-gradient(45deg, #2d3477, #18cea7, #18ce73, #ce8e18, #ce1e18);
+    background-size: 500% 500%;
+    -webkit-animation: gradient 42s ease infinite;
+    -moz-animation: gradient 42s ease infinite;
+    animation: gradient 42s ease infinite;
+    padding: 15px 25px 25px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px  rgba(255, 142, 37, 0.5);
+    
+}
+
+.question-block h4 {
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.question-block label {
+    font-size: 20px;
+}
+
+.question-block input[type='radio'] {
+    transform: scale(1.8);
+    margin: 10px;
+}
+
+.resultats {
+    background: linear-gradient(45deg, #2d3477, #18cea7, #18ce73, #ce8e18, #ce1e18);
+    background-size: 500% 500%;
+    -webkit-animation: gradient 42s ease infinite;
+    -moz-animation: gradient 42s ease infinite;
+    animation: gradient 42s ease infinite;
+    padding: 25px;
+    margin: 20px 0px 70px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(255, 142, 37, 0.5);
+}
+.resultats h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.aide {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.note {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+form button {
+    background: linear-gradient(45deg, #2d3477, #18cea7, #18ce73, #ce8e18, #ce1e18);
+    background-size: 500% 500%;
+    -webkit-animation: gradient 42s ease infinite;
+    -moz-animation: gradient 42s ease infinite;
+    animation: gradient 42s ease infinite;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: 0 0 5px rgba(255, 142, 37, 0.5);
+    transition: background 0.4s ease-in-out;
+}
+
+form button:hover {
+    background: linear-gradient(45deg, #cebc18, #18ce73);
+    
+}
+
+.echec {
+    animation: echec 0.3s ease-in-out;
+}
+
+.btn
+{
+    width: 30%;
+    background: linear-gradient(45deg, #2d3477, #18cea7, #18ce73, #ce8e18, #ce1e18);
+    background-size: 500% 500%;
+    -webkit-animation: gradient 42s ease infinite;
+    -moz-animation: gradient 42s ease infinite;
+    animation: gradient 42s ease infinite;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 20px 30px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 142, 37, 0.5);
+    transition: background 0.4s ease-in-out;
+
+}
+
+.btn:hover
+{
+    background: linear-gradient(45deg, #cebc18, #18ce73);
+
+}
+
+a.lien{
+	color:rgb(204, 204, 204);
+	text-decoration:none;
+	font-size: 25px;
+    text-transform: uppercase;
+    color: #000;
+   
+}
+
+a.lien:hover{
+	
+	font-weight: 500;
+	text-decoration: none;
+}
+
+@keyframes echec {
+    0% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(5px);
+    }
+    66% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+@media only screen and (max-width: 800px)
+
+{
+    h1 
+    {
+        font-size: 20px;
+    }
+
+    .question-block h4 
+    {
+        font-size: 14px;
+    }
+
+    .question-block label 
+    {
+        font-size: 14px;
+    }
+
+    form button
+    {
+        font-size: 14px;
+    }
+
+    .resultats h2 
+    {
+        font-size: 14px;
+    }
+    .aide 
+    {
+        font-size: 12px;
+        
+    }
+    .note 
+    {
+        font-size: 12px;
+    }
+    a.lien
+    {
+        font-size: 16px;
+    }
+    .btn
+    {
+    width: 60%;
+    }
+}
